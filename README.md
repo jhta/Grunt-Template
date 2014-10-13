@@ -17,7 +17,7 @@ Install:
 
     npm install grunt-cli grunt bower -g
     npm install browserify grunt-browserify debowerify
-    npm init 
-    bower init
+    npm install 
+    bower install
   
 
