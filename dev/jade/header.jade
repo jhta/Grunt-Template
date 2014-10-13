@@ -1,0 +1,25 @@
+- var links=[{name: 'First',link: 'first.html'},{name: 'Second',link: 'second.html'},{name: 'BLOG',link: 'blog.html'}]
+
+nav.top-bar(data-topbar='', role='navigation')
+  ul.title-area
+    li.name
+      h1
+        a(href='#') My Site
+    // Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
+    li.toggle-topbar.menu-icon
+      a(href='#')
+        span Menu
+  section.top-bar-section
+    // Right Nav Section
+    ul.right
+      each val in links
+        li(class=typeof val.name === "BLOG" ? "active" : undefined)
+          a(href=val.link)=val.name
+      
+      
+      
+            
+    // Left Nav Section
+    ul.left
+      li
+        a(href='#') Left Nav Button
